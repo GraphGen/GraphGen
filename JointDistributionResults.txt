@@ -1,0 +1,52 @@
+Lung Inactive (Total = 24139, Train = 20518) (6 <= |V| <= 50, 5 <= |E| <= 57)
+
+Model										| Node Degree and Label joint MMD
+GraphGen 									| 0.20546
+GraphRNN - With Labels   							| 0.83688	
+Deep GMG 									| 0.84246
+-------------------------------------------------------------------------------------------------------------
+
+
+Yeast Max Nodes (Total = 55533, Train = 47203) (5 <= |V| <= 50, 5 <= |E| <= 57)
+Model										| Node Degree and Label joint MMD
+GraphGen  									| 0.09381
+GraphRNN - With Labels 								| 0.99756
+Deep GMG 									| 0.96782
+-------------------------------------------------------------------------------------------------------------
+
+
+ALL (LungActive + LungInactive + Leukemia + Yeast + Breast)  (Total = 80255, Train = 68216) (5 <= |V| <= 129, 4 <= |E| <= 135)
+Model										| Node Degree and Label joint MMD
+GraphGen  									| 0.14062
+GraphRNN - With Labels 								| 0.87954
+Deep GMG 		 							| 0.91220
+-------------------------------------------------------------------------------------------------------------
+
+Non Chemical Datasets
+
+ENZYMES (600)  Max Edges = 149 Max Nodes = 125
+Model										| Node Degree and Label joint MMD
+GraphGen  			  						| 0.24961
+GraphRNN - With Labels		   						| 0.31218
+Deep GMG 									| -
+-------------------------------------------------------------------------------------------------------------
+
+Random Walk Sampled graphs citeseer  (Total = 21165, Train = 17990) (1 <= |V| <= 102, 1 <= |E| <= 121)
+Model										| Node Degree and Label joint MMD
+GraphGen  									| 0.03241
+GraphRNN - With Labels								| 0.03543
+Deep GMG 									| -
+-------------------------------------------------------------------------------------------------------------
+
+Random Walk Sampled graphs cora  (Total = 18949, Train = 16106) (9 <= |V| <= 111, 20 <= |E| <= 124)
+Model										| Node Degree and Label joint MMD
+GraphGen  									| 0.01352
+GraphRNN - With Labels								| 0.01477	
+Deep GMG 									| -
+-------------------------------------------------------------------------------------------------------------
+
+
+On Average ~ 4 times better than GraphRNN
+On Average ~ 7 times better than Deep GMG
+
+- Means model didn't complete training within cutoff period specified in main paper.
